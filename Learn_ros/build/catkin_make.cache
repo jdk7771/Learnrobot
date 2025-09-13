@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/home/jiang/home/Learnrobot/Learn_ros/devel -DCMAKE_INSTALL_PREFIX=/home/jiang/home/Learnrobot/Learn_ros/install -G Unix Makefiles
