@@ -1,0 +1,6 @@
+int32 dish_count
+---
+bool success
+string result_message
+---
+float32 progress

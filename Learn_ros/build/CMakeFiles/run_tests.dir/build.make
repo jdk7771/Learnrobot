@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jiang/home/Learnrobot/Learn_ros/src
+CMAKE_SOURCE_DIR = /home/ljx/snap/Learnrobot/Learn_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jiang/home/Learnrobot/Learn_ros/build
+CMAKE_BINARY_DIR = /home/ljx/snap/Learnrobot/Learn_ros/build
 
 # Utility rule file for run_tests.
 
@@ -67,6 +67,6 @@ CMakeFiles/run_tests.dir/clean:
 .PHONY : CMakeFiles/run_tests.dir/clean
 
 CMakeFiles/run_tests.dir/depend:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiang/home/Learnrobot/Learn_ros/src /home/jiang/home/Learnrobot/Learn_ros/src /home/jiang/home/Learnrobot/Learn_ros/build /home/jiang/home/Learnrobot/Learn_ros/build /home/jiang/home/Learnrobot/Learn_ros/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljx/snap/Learnrobot/Learn_ros/src /home/ljx/snap/Learnrobot/Learn_ros/src /home/ljx/snap/Learnrobot/Learn_ros/build /home/ljx/snap/Learnrobot/Learn_ros/build /home/ljx/snap/Learnrobot/Learn_ros/build/CMakeFiles/run_tests.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/run_tests.dir/depend
 

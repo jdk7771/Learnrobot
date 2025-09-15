@@ -7,7 +7,4 @@
 # new environment variables
 
 # modified environment variables
-export LD_LIBRARY_PATH='/home/jiang/catkin_ws/devel/lib:/opt/ros/noetic/lib:/opt/ros/noetic/lib/x86_64-linux-gnu:/lib64:/lib64'
-export PKG_CONFIG_PATH='/home/jiang/catkin_ws/devel/lib/pkgconfig:/opt/ros/noetic/lib/pkgconfig:/opt/ros/noetic/lib/x86_64-linux-gnu/pkgconfig:/usr/local/protobuf/lib/pkgconfig/'
-export PWD='/home/jiang/home/Learnrobot/Learn_ros/build'
-export PYTHONPATH='/home/jiang/catkin_ws/devel/lib/python3/dist-packages:/opt/ros/noetic/lib/python3/dist-packages'
+export PWD='/home/ljx/snap/Learnrobot/Learn_ros/build'
