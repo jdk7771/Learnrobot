@@ -7,3 +7,5 @@ def callback(msg):
     
 rospy.init_node("topic_no")
 sub = rospy.Subscriber('pubilish_int32',std_msgs.msg.Int32,callback)
+while(1):
+    continue

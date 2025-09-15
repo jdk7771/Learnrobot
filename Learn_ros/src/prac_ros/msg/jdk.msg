@@ -1,0 +1,2 @@
+float32 answer
+string jiangdakun
