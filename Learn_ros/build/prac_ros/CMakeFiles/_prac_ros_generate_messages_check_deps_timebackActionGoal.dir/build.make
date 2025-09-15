@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ljx/snap/Learnrobot/Learn_ros/build
 include prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/progress.make
 
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal:
-	cd /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py prac_ros /home/ljx/snap/Learnrobot/Learn_ros/devel/share/prac_ros/msg/timebackActionGoal.msg prac_ros/timebackGoal:std_msgs/Header:actionlib_msgs/GoalID
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py prac_ros /home/ljx/snap/Learnrobot/Learn_ros/devel/share/prac_ros/msg/timebackActionGoal.msg std_msgs/Header:actionlib_msgs/GoalID:prac_ros/timebackGoal
 
 _prac_ros_generate_messages_check_deps_timebackActionGoal: prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal
 _prac_ros_generate_messages_check_deps_timebackActionGoal: prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/build.make
