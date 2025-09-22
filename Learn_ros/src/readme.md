@@ -32,3 +32,10 @@
 3. 协调底盘移动和机械臂运动。	挑战项目：抓取与递送。移动机械臂导航到桌子前 -> 机械臂抓取物体 -> 导航返回 -> 放下物体。
 高级控制	《Modern Robotics》第11章（机器人控制）。	在Gazebo中为UR5模型配置力传感器插件，尝试实现简单的阻抗控制策略。	让机械臂能与环境进行柔顺交互（如擦拭表面）。
 机器学习	强化学习（RL）论文（如DeepMind的）。	使用OpenAI Gym或RLlib搭建仿真环境，训练一个简单的机械臂抓取策略。
+
+
+roslaunch ur_gazebo ur5_bringup.launch 
+roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch sim:=true
+
+roslaunch ur5_moveit_config moveit_rviz.launch
+
