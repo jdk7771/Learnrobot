@@ -1,13 +1,13 @@
 file(REMOVE_RECURSE
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/jdk.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackAction.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackActionFeedback.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackActionGoal.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackActionResult.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackFeedback.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackGoal.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackResult.lisp"
-  "/home/ljx/snap/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/srv/SrvJdk.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/jdk.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackAction.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackActionFeedback.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackActionGoal.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackActionResult.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackFeedback.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackGoal.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/msg/timebackResult.lisp"
+  "/home/jiang/home/Learnrobot/Learn_ros/devel/share/common-lisp/ros/prac_ros/srv/SrvJdk.lisp"
   "CMakeFiles/prac_ros_generate_messages_lisp"
 )
 

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljx/snap/Learnrobot/Learn_ros/src
+CMAKE_SOURCE_DIR = /home/jiang/home/Learnrobot/Learn_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljx/snap/Learnrobot/Learn_ros/build
+CMAKE_BINARY_DIR = /home/jiang/home/Learnrobot/Learn_ros/build
 
 # Utility rule file for actionlib_generate_messages_py.
 
@@ -63,10 +63,10 @@ prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/build: actionlib_generate
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/build
 
 prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/clean:
-	cd /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_py.dir/cmake_clean.cmake
+	cd /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_generate_messages_py.dir/cmake_clean.cmake
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/clean
 
 prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/depend:
-	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljx/snap/Learnrobot/Learn_ros/src /home/ljx/snap/Learnrobot/Learn_ros/src/prac_ros /home/ljx/snap/Learnrobot/Learn_ros/build /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiang/home/Learnrobot/Learn_ros/src /home/jiang/home/Learnrobot/Learn_ros/src/prac_ros /home/jiang/home/Learnrobot/Learn_ros/build /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/depend
 

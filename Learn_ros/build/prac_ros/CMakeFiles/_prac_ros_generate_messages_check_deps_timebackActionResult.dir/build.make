@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/ljx/snap/Learnrobot/Learn_ros/src
+CMAKE_SOURCE_DIR = /home/jiang/home/Learnrobot/Learn_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ljx/snap/Learnrobot/Learn_ros/build
+CMAKE_BINARY_DIR = /home/jiang/home/Learnrobot/Learn_ros/build
 
 # Utility rule file for _prac_ros_generate_messages_check_deps_timebackActionResult.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/ljx/snap/Learnrobot/Learn_ros/build
 include prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/progress.make
 
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult:
-	cd /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py prac_ros /home/ljx/snap/Learnrobot/Learn_ros/devel/share/prac_ros/msg/timebackActionResult.msg prac_ros/timebackResult:std_msgs/Header:actionlib_msgs/GoalStatus:actionlib_msgs/GoalID
+	cd /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros && ../catkin_generated/env_cached.sh /usr/bin/python3 /opt/ros/noetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py prac_ros /home/jiang/home/Learnrobot/Learn_ros/devel/share/prac_ros/msg/timebackActionResult.msg actionlib_msgs/GoalStatus:actionlib_msgs/GoalID:prac_ros/timebackResult:std_msgs/Header
 
 _prac_ros_generate_messages_check_deps_timebackActionResult: prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult
 _prac_ros_generate_messages_check_deps_timebackActionResult: prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/build.make
@@ -67,10 +67,10 @@ prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/build
 
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/clean:
-	cd /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros && $(CMAKE_COMMAND) -P CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/cmake_clean.cmake
+	cd /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros && $(CMAKE_COMMAND) -P CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/cmake_clean.cmake
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/clean
 
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/depend:
-	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljx/snap/Learnrobot/Learn_ros/src /home/ljx/snap/Learnrobot/Learn_ros/src/prac_ros /home/ljx/snap/Learnrobot/Learn_ros/build /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiang/home/Learnrobot/Learn_ros/src /home/jiang/home/Learnrobot/Learn_ros/src/prac_ros /home/jiang/home/Learnrobot/Learn_ros/build /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/depend
 

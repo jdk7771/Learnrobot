@@ -39,3 +39,5 @@ roslaunch ur5_moveit_config ur5_moveit_planning_execution.launch sim:=true
 
 roslaunch ur5_moveit_config moveit_rviz.launch
 
+rosrun controller_manager controller_manager start joint_group_pos_controller
+

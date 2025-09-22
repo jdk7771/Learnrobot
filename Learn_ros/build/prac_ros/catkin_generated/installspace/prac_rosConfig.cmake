@@ -67,14 +67,14 @@ set(prac_ros_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(prac_ros_SOURCE_PREFIX /home/ljx/snap/Learnrobot/Learn_ros/src/prac_ros)
-  set(prac_ros_DEVEL_PREFIX /home/ljx/snap/Learnrobot/Learn_ros/devel)
+  set(prac_ros_SOURCE_PREFIX /home/jiang/home/Learnrobot/Learn_ros/src/prac_ros)
+  set(prac_ros_DEVEL_PREFIX /home/jiang/home/Learnrobot/Learn_ros/devel)
   set(prac_ros_INSTALL_PREFIX "")
   set(prac_ros_PREFIX ${prac_ros_DEVEL_PREFIX})
 else()
   set(prac_ros_SOURCE_PREFIX "")
   set(prac_ros_DEVEL_PREFIX "")
-  set(prac_ros_INSTALL_PREFIX /home/ljx/snap/Learnrobot/Learn_ros/install)
+  set(prac_ros_INSTALL_PREFIX /home/jiang/home/Learnrobot/Learn_ros/install)
   set(prac_ros_PREFIX ${prac_ros_INSTALL_PREFIX})
 endif()
 
@@ -156,7 +156,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/ljx/snap/Learnrobot/Learn_ros/install/lib;/opt/ros/noetic/lib)
+    foreach(path /home/jiang/home/Learnrobot/Learn_ros/install/lib;/home/jiang/catkin_ws/devel/lib;/opt/ros/noetic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

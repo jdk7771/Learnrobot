@@ -5,7 +5,7 @@
 # or fall back to the destination set at configure time
 
 if test -z $_CATKIN_SETUP_DIR
-    set _CATKIN_SETUP_DIR /home/ljx/snap/Learnrobot/Learn_ros/devel
+    set _CATKIN_SETUP_DIR /home/jiang/home/Learnrobot/Learn_ros/devel
 end
 
 set CATKIN_SETUP_UTIL_ARGS "--extend --local"
