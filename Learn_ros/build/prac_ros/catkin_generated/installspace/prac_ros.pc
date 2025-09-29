@@ -1,4 +1,4 @@
-prefix=/home/jiang/home/Learnrobot/Learn_ros/install
+prefix=/home/ljx/snap/Learnrobot/Learn_ros/install
 
 Name: prac_ros
 Description: Description of prac_ros

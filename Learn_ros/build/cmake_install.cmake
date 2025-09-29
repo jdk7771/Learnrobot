@@ -1,8 +1,8 @@
-# Install script for directory: /home/jiang/home/Learnrobot/Learn_ros/src
+# Install script for directory: /home/ljx/snap/Learnrobot/Learn_ros/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/jiang/home/Learnrobot/Learn_ros/install")
+  set(CMAKE_INSTALL_PREFIX "/home/ljx/snap/Learnrobot/Learn_ros/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,121 +49,122 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jiang/home/Learnrobot/Learn_ros/install/_setup_util.py")
+   "/home/ljx/snap/Learnrobot/Learn_ros/install/_setup_util.py")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jiang/home/Learnrobot/Learn_ros/install" TYPE PROGRAM FILES "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/_setup_util.py")
+file(INSTALL DESTINATION "/home/ljx/snap/Learnrobot/Learn_ros/install" TYPE PROGRAM FILES "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/_setup_util.py")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jiang/home/Learnrobot/Learn_ros/install/env.sh")
+   "/home/ljx/snap/Learnrobot/Learn_ros/install/env.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jiang/home/Learnrobot/Learn_ros/install" TYPE PROGRAM FILES "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/env.sh")
+file(INSTALL DESTINATION "/home/ljx/snap/Learnrobot/Learn_ros/install" TYPE PROGRAM FILES "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/env.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jiang/home/Learnrobot/Learn_ros/install/setup.bash;/home/jiang/home/Learnrobot/Learn_ros/install/local_setup.bash")
+   "/home/ljx/snap/Learnrobot/Learn_ros/install/setup.bash;/home/ljx/snap/Learnrobot/Learn_ros/install/local_setup.bash")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jiang/home/Learnrobot/Learn_ros/install" TYPE FILE FILES
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.bash"
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.bash"
+file(INSTALL DESTINATION "/home/ljx/snap/Learnrobot/Learn_ros/install" TYPE FILE FILES
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.bash"
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.bash"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jiang/home/Learnrobot/Learn_ros/install/setup.sh;/home/jiang/home/Learnrobot/Learn_ros/install/local_setup.sh")
+   "/home/ljx/snap/Learnrobot/Learn_ros/install/setup.sh;/home/ljx/snap/Learnrobot/Learn_ros/install/local_setup.sh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jiang/home/Learnrobot/Learn_ros/install" TYPE FILE FILES
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.sh"
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.sh"
+file(INSTALL DESTINATION "/home/ljx/snap/Learnrobot/Learn_ros/install" TYPE FILE FILES
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.sh"
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.sh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jiang/home/Learnrobot/Learn_ros/install/setup.zsh;/home/jiang/home/Learnrobot/Learn_ros/install/local_setup.zsh")
+   "/home/ljx/snap/Learnrobot/Learn_ros/install/setup.zsh;/home/ljx/snap/Learnrobot/Learn_ros/install/local_setup.zsh")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jiang/home/Learnrobot/Learn_ros/install" TYPE FILE FILES
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.zsh"
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.zsh"
+file(INSTALL DESTINATION "/home/ljx/snap/Learnrobot/Learn_ros/install" TYPE FILE FILES
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.zsh"
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.zsh"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jiang/home/Learnrobot/Learn_ros/install/setup.fish;/home/jiang/home/Learnrobot/Learn_ros/install/local_setup.fish")
+   "/home/ljx/snap/Learnrobot/Learn_ros/install/setup.fish;/home/ljx/snap/Learnrobot/Learn_ros/install/local_setup.fish")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jiang/home/Learnrobot/Learn_ros/install" TYPE FILE FILES
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.fish"
-    "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.fish"
+file(INSTALL DESTINATION "/home/ljx/snap/Learnrobot/Learn_ros/install" TYPE FILE FILES
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/setup.fish"
+    "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/local_setup.fish"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
-   "/home/jiang/home/Learnrobot/Learn_ros/install/.rosinstall")
+   "/home/ljx/snap/Learnrobot/Learn_ros/install/.rosinstall")
   if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
   if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
     message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
   endif()
-file(INSTALL DESTINATION "/home/jiang/home/Learnrobot/Learn_ros/install" TYPE FILE FILES "/home/jiang/home/Learnrobot/Learn_ros/build/catkin_generated/installspace/.rosinstall")
+file(INSTALL DESTINATION "/home/ljx/snap/Learnrobot/Learn_ros/install" TYPE FILE FILES "/home/ljx/snap/Learnrobot/Learn_ros/build/catkin_generated/installspace/.rosinstall")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/gtest/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/universal_robots/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/deep_cpntrol/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/prac_ros/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur10_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur10e_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur12e_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur15_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur16e_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur20_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur30_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur3_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur3e_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur5_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur5e_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur7e_moveit_config/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur_description/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur_gazebo/cmake_install.cmake")
-  include("/home/jiang/home/Learnrobot/Learn_ros/build/universal_robot/ur_kinematics/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/gtest/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/universal_robots/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/arm_learn/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/deep_cpntrol/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur10_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur10e_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur12e_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur15_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur16e_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur20_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur30_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur3_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur3e_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur5_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur5e_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur7e_moveit_config/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur_description/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur_gazebo/cmake_install.cmake")
+  include("/home/ljx/snap/Learnrobot/Learn_ros/build/universal_robot/ur_kinematics/cmake_install.cmake")
 
 endif()
 
@@ -175,5 +176,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/jiang/home/Learnrobot/Learn_ros/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/ljx/snap/Learnrobot/Learn_ros/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

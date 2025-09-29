@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jiang/home/Learnrobot/Learn_ros/src
+CMAKE_SOURCE_DIR = /home/ljx/snap/Learnrobot/Learn_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jiang/home/Learnrobot/Learn_ros/build
+CMAKE_BINARY_DIR = /home/ljx/snap/Learnrobot/Learn_ros/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -82,8 +82,8 @@ install/fast: preinstall/fast
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/cmake-gui -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -137,14 +137,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/jiang/home/Learnrobot/Learn_ros/build/CMakeFiles /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/progress.marks
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jiang/home/Learnrobot/Learn_ros/build/CMakeFiles 0
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/ljx/snap/Learnrobot/Learn_ros/build/CMakeFiles /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/progress.marks
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ljx/snap/Learnrobot/Learn_ros/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/clean
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/clean
 .PHONY : clean
 
 # The main clean target
@@ -154,22 +154,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/preinstall
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/preinstall
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_genpy.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_genpy.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_genpy.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_genpy.dir/rule
 
 # Convenience name for target.
@@ -179,12 +179,12 @@ prac_ros_genpy: prac_ros/CMakeFiles/prac_ros_genpy.dir/rule
 
 # fast build rule for target.
 prac_ros_genpy/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_genpy.dir/build.make prac_ros/CMakeFiles/prac_ros_genpy.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_genpy.dir/build.make prac_ros/CMakeFiles/prac_ros_genpy.dir/build
 .PHONY : prac_ros_genpy/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/rule
 
 # Convenience name for target.
@@ -194,12 +194,12 @@ _prac_ros_generate_messages_check_deps_jdk: prac_ros/CMakeFiles/_prac_ros_genera
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_jdk/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_jdk.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_jdk/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/rule
 
 # Convenience name for target.
@@ -209,12 +209,12 @@ _prac_ros_generate_messages_check_deps_timebackAction: prac_ros/CMakeFiles/_prac
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_timebackAction/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackAction.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_timebackAction/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -224,12 +224,12 @@ actionlib_generate_messages_lisp: prac_ros/CMakeFiles/actionlib_generate_message
 
 # fast build rule for target.
 actionlib_generate_messages_lisp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_lisp.dir/build
 .PHONY : actionlib_generate_messages_lisp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ actionlib_msgs_generate_messages_lisp: prac_ros/CMakeFiles/actionlib_msgs_genera
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
 .PHONY : actionlib_msgs_generate_messages_lisp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_generate_messages.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -254,12 +254,12 @@ prac_ros_generate_messages: prac_ros/CMakeFiles/prac_ros_generate_messages.dir/r
 
 # fast build rule for target.
 prac_ros_generate_messages/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages.dir/build
 .PHONY : prac_ros_generate_messages/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/rule
 
 # Convenience name for target.
@@ -269,12 +269,12 @@ _prac_ros_generate_messages_check_deps_timebackActionResult: prac_ros/CMakeFiles
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_timebackActionResult/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionResult.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_timebackActionResult/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -284,12 +284,12 @@ actionlib_generate_messages_nodejs: prac_ros/CMakeFiles/actionlib_generate_messa
 
 # fast build rule for target.
 actionlib_generate_messages_nodejs/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_nodejs.dir/build
 .PHONY : actionlib_generate_messages_nodejs/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -299,12 +299,12 @@ prac_ros_generate_messages_cpp: prac_ros/CMakeFiles/prac_ros_generate_messages_c
 
 # fast build rule for target.
 prac_ros_generate_messages_cpp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_cpp.dir/build
 .PHONY : prac_ros_generate_messages_cpp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -314,12 +314,12 @@ actionlib_generate_messages_py: prac_ros/CMakeFiles/actionlib_generate_messages_
 
 # fast build rule for target.
 actionlib_generate_messages_py/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_py.dir/build
 .PHONY : actionlib_generate_messages_py/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -329,12 +329,12 @@ actionlib_msgs_generate_messages_nodejs: prac_ros/CMakeFiles/actionlib_msgs_gene
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_nodejs/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
 .PHONY : actionlib_msgs_generate_messages_nodejs/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/rule
 
 # Convenience name for target.
@@ -344,12 +344,12 @@ _prac_ros_generate_messages_check_deps_timebackActionFeedback: prac_ros/CMakeFil
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_timebackActionFeedback/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionFeedback.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_timebackActionFeedback/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/rule
 
 # Convenience name for target.
@@ -359,12 +359,12 @@ _prac_ros_generate_messages_check_deps_timebackGoal: prac_ros/CMakeFiles/_prac_r
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_timebackGoal/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackGoal.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_timebackGoal/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_gencpp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_gencpp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_gencpp.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_gencpp.dir/rule
 
 # Convenience name for target.
@@ -374,12 +374,12 @@ prac_ros_gencpp: prac_ros/CMakeFiles/prac_ros_gencpp.dir/rule
 
 # fast build rule for target.
 prac_ros_gencpp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_gencpp.dir/build.make prac_ros/CMakeFiles/prac_ros_gencpp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_gencpp.dir/build.make prac_ros/CMakeFiles/prac_ros_gencpp.dir/build
 .PHONY : prac_ros_gencpp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_geneus.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_geneus.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_geneus.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_geneus.dir/rule
 
 # Convenience name for target.
@@ -389,12 +389,12 @@ prac_ros_geneus: prac_ros/CMakeFiles/prac_ros_geneus.dir/rule
 
 # fast build rule for target.
 prac_ros_geneus/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_geneus.dir/build.make prac_ros/CMakeFiles/prac_ros_geneus.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_geneus.dir/build.make prac_ros/CMakeFiles/prac_ros_geneus.dir/build
 .PHONY : prac_ros_geneus/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -404,12 +404,12 @@ actionlib_msgs_generate_messages_py: prac_ros/CMakeFiles/actionlib_msgs_generate
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_py/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
 .PHONY : actionlib_msgs_generate_messages_py/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -419,12 +419,12 @@ actionlib_generate_messages_cpp: prac_ros/CMakeFiles/actionlib_generate_messages
 
 # fast build rule for target.
 actionlib_generate_messages_cpp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_cpp.dir/build
 .PHONY : actionlib_generate_messages_cpp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_genlisp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_genlisp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_genlisp.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_genlisp.dir/rule
 
 # Convenience name for target.
@@ -434,12 +434,12 @@ prac_ros_genlisp: prac_ros/CMakeFiles/prac_ros_genlisp.dir/rule
 
 # fast build rule for target.
 prac_ros_genlisp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_genlisp.dir/build.make prac_ros/CMakeFiles/prac_ros_genlisp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_genlisp.dir/build.make prac_ros/CMakeFiles/prac_ros_genlisp.dir/build
 .PHONY : prac_ros_genlisp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ actionlib_msgs_generate_messages_eus: prac_ros/CMakeFiles/actionlib_msgs_generat
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_eus/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 .PHONY : actionlib_msgs_generate_messages_eus/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/rule
 
 # Convenience name for target.
@@ -464,12 +464,12 @@ _prac_ros_generate_messages_check_deps_timebackActionGoal: prac_ros/CMakeFiles/_
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_timebackActionGoal/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackActionGoal.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_timebackActionGoal/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/rule
 
 # Convenience name for target.
@@ -479,12 +479,12 @@ _prac_ros_generate_messages_check_deps_timebackResult: prac_ros/CMakeFiles/_prac
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_timebackResult/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackResult.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_timebackResult/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/rule
 
 # Convenience name for target.
@@ -494,12 +494,12 @@ _prac_ros_generate_messages_check_deps_timebackFeedback: prac_ros/CMakeFiles/_pr
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_timebackFeedback/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_timebackFeedback.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_timebackFeedback/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/rule
 .PHONY : prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/rule
 
 # Convenience name for target.
@@ -509,12 +509,12 @@ _prac_ros_generate_messages_check_deps_SrvJdk: prac_ros/CMakeFiles/_prac_ros_gen
 
 # fast build rule for target.
 _prac_ros_generate_messages_check_deps_SrvJdk/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/build.make prac_ros/CMakeFiles/_prac_ros_generate_messages_check_deps_SrvJdk.dir/build
 .PHONY : _prac_ros_generate_messages_check_deps_SrvJdk/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -524,12 +524,12 @@ prac_ros_generate_messages_eus: prac_ros/CMakeFiles/prac_ros_generate_messages_e
 
 # fast build rule for target.
 prac_ros_generate_messages_eus/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_eus.dir/build
 .PHONY : prac_ros_generate_messages_eus/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
@@ -539,12 +539,12 @@ actionlib_msgs_generate_messages_cpp: prac_ros/CMakeFiles/actionlib_msgs_generat
 
 # fast build rule for target.
 actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make prac_ros/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
 .PHONY : actionlib_msgs_generate_messages_cpp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 .PHONY : prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -554,12 +554,12 @@ actionlib_generate_messages_eus: prac_ros/CMakeFiles/actionlib_generate_messages
 
 # fast build rule for target.
 actionlib_generate_messages_eus/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build.make prac_ros/CMakeFiles/actionlib_generate_messages_eus.dir/build
 .PHONY : actionlib_generate_messages_eus/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/rule
 
 # Convenience name for target.
@@ -569,12 +569,12 @@ prac_ros_generate_messages_lisp: prac_ros/CMakeFiles/prac_ros_generate_messages_
 
 # fast build rule for target.
 prac_ros_generate_messages_lisp/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_lisp.dir/build
 .PHONY : prac_ros_generate_messages_lisp/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -584,12 +584,12 @@ prac_ros_generate_messages_nodejs: prac_ros/CMakeFiles/prac_ros_generate_message
 
 # fast build rule for target.
 prac_ros_generate_messages_nodejs/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_nodejs.dir/build
 .PHONY : prac_ros_generate_messages_nodejs/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_gennodejs.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_gennodejs.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_gennodejs.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -599,12 +599,12 @@ prac_ros_gennodejs: prac_ros/CMakeFiles/prac_ros_gennodejs.dir/rule
 
 # fast build rule for target.
 prac_ros_gennodejs/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_gennodejs.dir/build.make prac_ros/CMakeFiles/prac_ros_gennodejs.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_gennodejs.dir/build.make prac_ros/CMakeFiles/prac_ros_gennodejs.dir/build
 .PHONY : prac_ros_gennodejs/fast
 
 # Convenience name for target.
 prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/rule:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/rule
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f CMakeFiles/Makefile2 prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/rule
 .PHONY : prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -614,7 +614,7 @@ prac_ros_generate_messages_py: prac_ros/CMakeFiles/prac_ros_generate_messages_py
 
 # fast build rule for target.
 prac_ros_generate_messages_py/fast:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/build
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(MAKE) -f prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/build.make prac_ros/CMakeFiles/prac_ros_generate_messages_py.dir/build
 .PHONY : prac_ros_generate_messages_py/fast
 
 # Help Target
@@ -671,6 +671,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

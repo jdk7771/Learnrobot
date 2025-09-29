@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jiang/home/Learnrobot/Learn_ros/src
+CMAKE_SOURCE_DIR = /home/ljx/snap/Learnrobot/Learn_ros/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jiang/home/Learnrobot/Learn_ros/build
+CMAKE_BINARY_DIR = /home/ljx/snap/Learnrobot/Learn_ros/build
 
 # Utility rule file for actionlib_msgs_generate_messages_eus.
 
@@ -63,10 +63,10 @@ prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build: actionlib_ms
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
 
 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_msgs_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/clean
 
 prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend:
-	cd /home/jiang/home/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jiang/home/Learnrobot/Learn_ros/src /home/jiang/home/Learnrobot/Learn_ros/src/prac_ros /home/jiang/home/Learnrobot/Learn_ros/build /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros /home/jiang/home/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ljx/snap/Learnrobot/Learn_ros/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ljx/snap/Learnrobot/Learn_ros/src /home/ljx/snap/Learnrobot/Learn_ros/src/prac_ros /home/ljx/snap/Learnrobot/Learn_ros/build /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros /home/ljx/snap/Learnrobot/Learn_ros/build/prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : prac_ros/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/depend
 
