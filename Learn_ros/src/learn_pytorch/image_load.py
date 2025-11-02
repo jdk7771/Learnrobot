@@ -22,10 +22,10 @@ def show_mnist_image(imgs, nums_row, nums_line, scale=1.5, titles=None):
             ax.set_title(titles[i])
     return axes
 
-trans = transforms.ToTensor()
+# trans = transforms.ToTensor()
 
-mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True, transform=trans, download=True )
-mnist_test = torchvision.datasets.FashionMNIST(root="../data", train=False, transform=trans, download=True )
-img,lab = next(iter(data.DataLoader(mnist_train, batch_size=18)))
-show_mnist_image(img, 2, 9,titles= get_mnist_label(lab))
-plt.show()
+# mnist_train = torchvision.datasets.FashionMNIST(root="../data", train=True, transform=trans, download=True )
+# mnist_test = torchvision.datasets.FashionMNIST(root="../data", train=False, transform=trans, download=True )
+# img,lab = next(iter(data.DataLoader(mnist_train, batch_size=18)))
+# show_mnist_image(img, 2, 9,titles= get_mnist_label(lab))
+# plt.show()

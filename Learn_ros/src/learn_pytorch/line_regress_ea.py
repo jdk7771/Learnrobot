@@ -9,7 +9,6 @@ def  load_array(array, batch_size, is_train = True):
 
 
 
-
 def train():
 
     w = torch.normal(0, 0.02, size=(3,1), requires_grad=True)
