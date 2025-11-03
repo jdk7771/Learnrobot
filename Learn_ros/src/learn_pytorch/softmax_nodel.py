@@ -21,12 +21,13 @@ def get_iter(batchsize):
 
 def sgd(w, lr, batch):
     with torch.no_grad():
-        w-=w.grad_*lr/batch
-        w.grad.zero_()
+        for wsin in w:
+            wsin-=wsin.grad*lr/batch
+            wsin.grad.zero_()
 
 def softmax(result):
     result = torch.exp(result)
-    result = result/torch.sum(result, dim=1)
+    result = result/torch.sum(result, dim=1, keepdim=True)
     return result
 
 """feature:batchsize*feature
@@ -43,14 +44,32 @@ def net(feature, w, b):
     result = line(feature, w, b)
     return softmax(result)
 
-def cross_
+def cross_entropy(y_hat, y):
+    return -torch.log(y_hat[range(len(y)), y ])
 
+def get_accuracy(y_hat, y):
+    y_hat, y_ind = y_hat.max(dim =1) 
+    cmd = y_ind == y
+    return cmd.sum()/len(y)
 
-batchsize = 64
-nums_chara = 28*28
+def train():
 
-w = torch.normal(0, 0.01, size=(batchsize, nums_chara), requires_grad=True)
-b = torch.zeros((batchsize, 1), requires_grad=True)
+    batchsize = 64
+    nums_chara = 28*28
+    numepoch = 100
+
+    w = torch.normal(0, 0.01, size=(nums_chara, 10), requires_grad=True)
+    b = torch.zeros((10), requires_grad=True)
+
+    for epoch in range(numepoch):
+        for feartures,labels in get_iter(batchsize):
+            yhat = net(feartures, w, b)
+            loss = cross_entropy(yhat, labels)
+            loss.sum().backward()
+            sgd((w,b),lr=0.001,batch=batchsize)
+        print(f"第{epoch}轮准确率为{get_accuracy(yhat, labels)}")
+train()
+        
 
 
 
