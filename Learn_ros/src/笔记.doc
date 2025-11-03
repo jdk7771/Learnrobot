@@ -1,0 +1,81 @@
+cpp:
+     必须掌握的C++核心概念
+1. 现代C++特性（C++11/14/17）
+cpp
+
+// 智能指针（必须掌握）
+std::unique_ptr<Navigation> nav = std::make_unique<Navigation>();
+std::shared_ptr<Sensor> sensor = std::make_shared<Camera>();
+
+// 移动语义
+RobotState state = std::move(new_state);
+
+// Lambda表达式
+auto callback = [this](const Pose& pose) {
+    this->updatePose(pose);
+};
+
+// 自动类型推导
+auto config = loadConfig();  // 代替 Config config = loadConfig();
+
+2. 面向对象设计模式
+cpp
+
+// 工厂模式 - Galbot中常见
+class RobotFactory {
+public:
+    static std::unique_ptr<Robot> createRobot(RobotType type);
+};
+
+// 策略模式 - 运动规划中使用
+class MotionStrategy {
+public:
+    virtual bool planPath(const Pose& start, const Pose& goal) = 0;
+};
+
+3. 模板编程
+cpp
+
+// 基础模板 - 配置解析中常见
+template<typename T>
+T ConfigParser::get(const std::string& key);
+
+// 标准库容器使用
+std::unordered_map<std::string, std::vector<double>> config_map;
+
+📚 Galbot项目特别需要的知识点
+1. 多线程编程
+cpp
+
+// 线程安全的数据访问
+std::mutex pose_mutex;
+std::condition_variable data_ready;
+
+// 异步任务 - 感知模块常用
+auto future = std::async(std::launch::async, &Perception::processImage, this, image);
+
+2. 资源管理
+cpp
+
+// RAII模式 - 文件、网络连接管理
+class FileHandler {
+private:
+    std::unique_ptr<std::ifstream> file_;
+public:
+    ~FileHandler() { if(file_) file_->close(); }
+};
+
+3. 错误处理
+cpp
+
+// 异常安全代码
+bool tryMoveTo(const Pose& target) {
+    try {
+        return motion_planner_->plan(target);
+    } catch (const std::exception& e) {
+        LOG(ERROR) << "Motion planning failed: " << e.what();
+        return false;
+    }
+}
+
+🔧 实践练习建议

@@ -43,6 +43,7 @@ def net(feature, w, b):
     result = line(feature, w, b)
     return softmax(result)
 
+def cross_
 
 
 batchsize = 64
