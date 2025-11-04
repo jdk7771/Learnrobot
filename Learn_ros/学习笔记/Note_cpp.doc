@@ -1,0 +1,11 @@
+单例模式
+ 整个程序中只能有一个该类的实例存在 一般方法为 将构造函数，拷贝西沟函数和赋值
+   饿汉模式：
+
+锁
+    std::mutex mtx;
+int counter = 0;
+
+void safeIncrement() {
+    for (int i = 0; i < 100000; ++i) {
+        std::lock_guard<std::mutex> lock(mtx); // 自动加锁和解锁
