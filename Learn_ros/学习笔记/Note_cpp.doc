@@ -9,3 +9,5 @@ int counter = 0;
 void safeIncrement() {
     for (int i = 0; i < 100000; ++i) {
         std::lock_guard<std::mutex> lock(mtx); // 自动加锁和解锁
+
+    float max_z = -std::numeric_limits<float>::infinity(); 
