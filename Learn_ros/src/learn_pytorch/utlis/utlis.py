@@ -47,3 +47,42 @@ class Get_accuracy():
     def clear(self):
         self.correct = 0
         self.total = 0
+
+
+def test(test_iter,net, device, loss):
+    if device is None:
+        device = next(iter(test_iter)).device
+
+    net.eval()
+    accuracy = Get_accuracy()
+
+    with torch.no_grad():
+        for x, y in test_iter:
+            y_hat = net(x)
+            los = loss(y_hat, y )
+            accuracy.update(y_hat, y )
+            total_loss += los.item()
+
+        accuracy_da = accuracy.get_acc()
+        avg_loss = total_loss / len(test_iter)    
+
+    print(f'测试集 - 损失: {avg_loss:.4f}, 准确率: {accuracy:.4f}')
+    return accuracy, avg_loss
+
+
+
+def train(net, train_data, test_data, loss, num_epochs, trainer, device):
+    if device is None:
+        device = next(net.parameters()).device
+
+    net.to(device)
+    for i in range(num_epochs):
+        net.train()
+        for x,y in train_data:
+            y_hat = net(x)
+            trainer.zero_grad()
+            loss.backward()
+            trainer.step()
+
+    test(test_data,net, loss)
+
